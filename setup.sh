@@ -16,6 +16,10 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
+# Downloads Dependancies
+echo "Downloading Required Files..."
+wget https://raw.githubusercontent.com/deanralph/serversetup2/main/telnet.py
+
 #checks if user is sudo no password
 echo -e "\033[1;36mChecking if user is sudo no password..."
 if grep -q "dean ALL=(ALL) NOPASSWD: ALL" /etc/sudoers; then

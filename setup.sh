@@ -63,4 +63,5 @@ else
     echo
 fi
 
+echo "Cleaning up"
 rm telnet.py

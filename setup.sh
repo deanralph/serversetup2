@@ -62,3 +62,5 @@ else
     echo "Skipping Bind"
     echo
 fi
+
+rm telnet.py
